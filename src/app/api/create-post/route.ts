@@ -12,19 +12,19 @@ export async function POST(req: NextRequest) {
   }
   try {
     const body = await req.json();
-    const { name, email } = body;
+    const { title, content } = body;
 
-    if (!name || !email) {
+    if (!title || !content) {
       return NextResponse.json(
         { error: "Missing required fields" },
         { status: 400 }
       );
     }
 
-    const user = await prisma.user.create({
+    const user = await prisma.post.create({
       data: {
-        name,
-        email,
+        title,
+        content,
       },
     });
 
