@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /**
  * Define routes for the API endpoints for application
  * e.g., /api/posts, /api/products, etc.
