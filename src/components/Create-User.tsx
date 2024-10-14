@@ -31,7 +31,7 @@ const CreateUser = () => {
       <CardHeader>
         <CardTitle>Create a User</CardTitle>
       </CardHeader>
-      <CardContent className="space-y-2">
+      <CardContent className="space-y-4">
         <CardDescription>
           Enter your name and email below to register a new user.
         </CardDescription>
